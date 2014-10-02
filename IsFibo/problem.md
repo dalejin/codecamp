@@ -25,6 +25,7 @@ Sample Input
 5
 7
 8
+
 Sample Output
 
 IsFibo
