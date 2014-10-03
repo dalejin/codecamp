@@ -21,7 +21,7 @@ def isFibo(n):
 
 #takes input of T
 input_list = []
-print ("Please enter input size on the first line \nand the values on the following lines.\nFirst number should be between 1 and 105. \nThe following values between 1 and 1010. \nEmpty line will crash the program.")
+print ("Please enter input size on the first line \nand the values on the following lines.\nFirst number should be between 1 and 105. \nThe following values between 1 and 1010. \n")
 
 while True:
 	
