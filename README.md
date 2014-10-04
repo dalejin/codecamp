@@ -1,4 +1,0 @@
-codecamp
-========
-
-Code training
