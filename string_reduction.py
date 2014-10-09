@@ -9,30 +9,24 @@ def str_reduce(st):
         return 'b'
     if st =='cb' or st =='bc' :
         return 'a'
-
+    return st
 
 
 def stringReduction(a):
     answer =0 
     strlength=len(a)
-    new_string=a
     #length is 1
     if strlength ==1 and (a[0] =='a' or a[0] =='b' or a[0] =='c'):
         answer =1
     #length is 2
     if strlength ==2:
-        answer =2
         #if it can be reduced length is 1
-        if a =='ab' or a =='ba' :
-            answer = 1
-        if a =='ac' or a =='ca' :
-            answer = 1
-        if a =='bc' or a =='cb' :
-            answer = 1
+        twolenstr = str_reduce(a)
+        #set length to length of new string
+        answer =len(twolenstr)
     #if length is larger than 2 then we parse the string and modify accordingly
     if strlength>2:
         answer = len(a)
-        min_len = len(a)
         #for loop for all values in the string
         for i in range(len(a)-1):
             #loop into if the character is not same as the character after it
@@ -66,6 +60,9 @@ def stringReduction(a):
 # Tail starts here
 if __name__ == '__main__':
     t = int(input())
+    result=''
     for i in range(0,t):
         a=input()
-        print(stringReduction(a))
+        result +=str(stringReduction(a))+'\n'
+    
+    print(result.rstrip('\n'))
