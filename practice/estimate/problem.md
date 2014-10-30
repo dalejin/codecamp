@@ -5,6 +5,7 @@ Rough estimation is a useful talent to possess. As you’re coding away, you may
 So this is a simple kata: a series of questions, each asking for a rough answer. Try to work each out in your head. I’ll post my answers (and how I got them) in a week or so.
 
 How Big?:
+
 roughly how many binary digits (bit) are required for the unsigned representation of:
 
 ```sh
@@ -19,6 +20,7 @@ My town has approximately 20,000 residences. How much space is required to store
 I’m storing 1,000,000 integers in a binary tree. Roughly how many nodes and levels can I expect the tree to have? Roughly how much space will it occupy on a 32-bit architecture?
 
 How Fast?:
+
 My copy of Meyer’s Object Oriented Software Construction has about 1,200 body pages. Assuming no flow control or protocol overhead, about how long would it take to send it over an async 56k baud modem line?
 
 My binary search algorithm takes about 4.5mS to search a 10,000 entry array, and about 6mS to search 100,000 elements. How long would I expect it to take to search 10,000,000 elements (assuming I have sufficient memory to prevent paging).
