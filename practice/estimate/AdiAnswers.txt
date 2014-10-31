@@ -1,0 +1,31 @@
+﻿How Big:
+1) For 1000 in binary, 2^10 =1028 so 10 digits would be required.
+    For 1,000,000 = 1000*1000 = 2^10*2^10 = 2^20. 20 bits required.
+    For 1,000,000,000= 1000*1,000,000=2^10*2^20= 2^30. 30 bits required.
+    For 1,000,000,000,000= 1000*2^30 = 2^40. 40 bits required.
+    For 8,000,000,000,000= 8*2^40= 2^3*2^40 = 2^43. 43 bits required.
+
+2) For characters, each name has first name, last name. About 12 characters each. So 24 characters.
+    Each address has 3/4/5 digit address, approx. 15 characters street name and abbreviation/apt #, so 20                      
+    characters.
+    Each phone number is about 10 characters.
+    24+20+10 = 54 characters for each resident. Each character is 1 byte.
+   54bytes*20,000 =  1080000 bytes= 1.08 MB.
+
+3) For 1 million integers it will be 1 million nodes. The levels/height of binary tree is 2^x and from the earlier problem 1 million can be reached with 2^20. So there are 20 levels.
+In 32-bit architecture, ints take 4 bytes. 4bytes*1million integers = 4 million bytes = 4MB.
+
+How Fast?:
+
+4) 1200 pages. Each page approximately has 500 words. The average word in the English language is 4.5 letters long. 500*5*1200= 3 million characters or 3 million bytes = 3MB.
+3MB/56000bits per second = 428.57 seconds or about 429 seconds=7.15 mins.
+
+5) BST = O(log n) to search. 
+log 10000 = 4 took 4.5s
+log 100000=5 took 6s
+log 10000000 = 7
+Using ratios x=4.5*7/4 =7.9 s. x=6*7/5 = 8.4s. So around 7.9s - 8.4s.
+For checking 4.5*5/4=5.6 s and the actual time is 6 s.  
+
+6) 16 characters with 96 possibilities is 96^16 possibilities of passwords. 1ms for each password.
+     Approx 100^16*1ms =1*10^29 seconds /(60s*60m*24hr) is approx. 1*10^24 days which is more than anyone’s recoded lifetime as 100 years is around 36525 days. Therefore, it is not a viable approach at all.
