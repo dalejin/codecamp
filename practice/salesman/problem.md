@@ -11,29 +11,34 @@ Pumpjack Decline - The pumpjacks will decline (D) in price every time you visit 
 
 Travel costs
 ------------
+```
 It costs the salesman $1/mile for his own travel.
 Pumpjacks' travel costs are $C/Pumpjack/Mile. C is given as part of the input.
 All distance costs are based on the real distance between two cities.
 Quality Oil Well Pumpjack Headquarters is located at (0,0).
+```
 Input Format
 ------------
 The first line of input for each test case will contain 3 parameters:
-
+```
 number of cities (N)
 pumpjack cost per mile (C)
 pumpjack factor of decline (D)
 This will be followed by N lines, which will each contain 3 integers, for city location (x and y co-ordinates the grid, in miles) and the intial pumpjack sales price. 
 - x y pumpjack_price
-
+```
 Constraints
 -----------
+```
 (10≤ N ≤ 10^5)
 (0.2 ≤ C ≤ 4) 
 (0.5 ≤ D ≤ 0.99)
 -1,000 < =x <= 1,000; -1,000 <= y <= 1,000
 cost of a pumpjack < 10^5
+```
 Sample Input
 ------------
+```
 10 3 0.95
 1 1 30
 2 2 35
@@ -45,12 +50,14 @@ Sample Input
 5 15 10
 8 18 15
 1 9 60
+```
 Output Format
 -------------
 On each line output the next city you are visiting (x,y). When leaving headquarters, also add the number of pumpjacks you are taking with you for that part of the trip. You do not need to return to headquarters when you finish your sales.
 
 Sample Output
 -------------
+```
 1 1 2
 2 2
 0 0
@@ -59,6 +66,7 @@ Sample Output
 0 0
 0 8 2
 1 9
+```
 Explanation
 -----------
 The salesman first travels a distance of √2 dollars to (1,1) carrying 2 pumpjacks. This will cost him √2 dollars for his own travel and 6√2 dollars for the 2 pumpjacks. He will then earn 30 dollars selling 1 pumpjack. He then continues to (2,2) with only 1 pumpjack, which will cost him 1√2 dollars for his travel and 3√2 dollars for his pumpjack. He will then earn 33.25 dollars selling the pumpjack, since the prices have declined by 5%. After his return to HQ (a distance of 2√2) he will have earned an approximate profit of 44.87 dollars.
@@ -66,7 +74,7 @@ The salesman first travels a distance of √2 dollars to (1,1) carrying 2 pumpja
 Scoring
 -------
 The goal of this challenge is to achieve the maximum profit on each test case. Your profits for each test case will be:
-
+```
 Total Pumpjack Sales - Total Travel Costs
-
+```
 You will receive a score for each test case based on the ratio of your profit to the estimated maximum profit. Your total score for this challenge will be a weighted sum of your scores for each test case. If your profit is negative, you'll receive zero score
